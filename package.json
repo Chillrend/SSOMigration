@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
+    "migrate:createorg" : "node ./bin/import_group.mjs",
     "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
   },
   "devDependencies": {
@@ -18,6 +19,7 @@
     "axios": "^1.6.2",
     "change-case-all": "^2.1.0",
     "cookie-parser": "~1.4.4",
+    "csv-to-js-parser": "^2.3.7",
     "debug": "~4.3.4",
     "dotenv": "^16.3.1",
     "express": "~4.16.1",
